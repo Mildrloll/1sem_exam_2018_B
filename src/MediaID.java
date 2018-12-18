@@ -9,7 +9,7 @@ import java.util.Scanner;
  *  Hver mediefil hos TV2 skal have et unikt ID, og denne klasse hjælper med at genrere unikke ID'er
  */
 public class MediaID {
-
+    //This is a crated integer whise is be sat to 100 that are being used in the method below, and it can only be used in this class.
     private static int latestId = 100;
 
 

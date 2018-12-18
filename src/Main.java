@@ -4,9 +4,7 @@ public class Main {
     public static final String MEDIA_MAPPE = "media/";
 
     public static void main(String[] args) {
-
+        //This main method runs the test method in the test class.
         Test.test();
-
     }
 }
-

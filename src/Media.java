@@ -3,18 +3,17 @@ import java.time.Instant;
 import java.util.Date;
 
 public class Media {
-
-    private int assetId;
-    private String name;
-    private Date created = new Date();
-    private String fileName;
-
-
+    private int assetId;//This crates a integer with the name assetId that can only be used in this class.
+    private String name;//This crates a string with the name name that can only be used in this class.
+    private Date created = new Date();//This crates a Date with the name created that can only be used in this class.
+    private String fileName;//This crates a string with the name fileName that can only be used in this class.
+    //The method under here crates a id for the integer and take the date off today for the date.
     public Media() {
+        //This Media method crates a ID from the MediaID class for the assetId and takes the date off today for the created.
         assetId = MediaID.generate();
         created = Date.from(Instant.now());
     }
-
+    //Here has there been create getters and setters for the integer, date and strings.
     public int getAssetId() {
         return assetId;
     }
@@ -49,6 +48,7 @@ public class Media {
 
     @Override
     public String toString() {
+        //This method overrides the superclass whise is the main class and prints out the the id, name, date and fileName.
         return "Media{" +
                 "assetId=" + assetId +
                 ", name='" + name + '\'' +
