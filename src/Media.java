@@ -148,4 +148,7 @@ public class Media {
                 ", fileName='" + fileName + '\'' +
                 '}';
     }
+    public static void logToConsol(){
+        System.out.print("");
+    }
 }
